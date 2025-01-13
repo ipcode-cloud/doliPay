@@ -78,7 +78,6 @@ app.get("/api/transactions", (req, res) => {
   res.status(200).json({total: transactions.length, list_of_transactions: transactions });
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Payment system running on http://localhost:${PORT}`);
 });
